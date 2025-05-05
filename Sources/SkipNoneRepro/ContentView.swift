@@ -44,6 +44,7 @@ struct WelcomeView : View {
     var body: some View {
         VStack(spacing: 0) {
             Text("Hello [\(welcomeName)](https://skip.tools)!")
+                .fixedSize()
                 .padding()
             Image(systemName: "heart.fill")
                 .foregroundStyle(.red)
